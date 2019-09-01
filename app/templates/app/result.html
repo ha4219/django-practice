@@ -1,0 +1,9 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block content %}
+    <ul>
+        {% for item in numbers %}
+        <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

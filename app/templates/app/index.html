@@ -1,0 +1,10 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block content %}
+    <p>{{current_date}}</p>
+
+    <img src="{% static 'app/img.png' %}" alt="test" width="20px"/>
+
+    {{current_date|date:"Y년 m월 d일 h시 i분 s초"}}<br/>
+    <a href="{% url 'select' %}">hi</a>
+{% endblock %}
